@@ -89,6 +89,7 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
+  border-bottom:1px solid grey;
 }
 .img-ctn-1,
 .img-ctn-2,

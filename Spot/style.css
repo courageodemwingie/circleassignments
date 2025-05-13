@@ -5,6 +5,7 @@ body {
 }
 :root {
   --bg-color:#f9f5f0;
+  --layout-width:1280;
 }
 main {
   font-family: sans-serif;
@@ -19,10 +20,9 @@ header {
   justify-content: center;
   align-items: center;
   width: 1440px;
-  padding: 1x;
+  padding: 1px;
   background-color: white;
   border-radius: 2x;
-  border: 1px solid #e0e0e0;
 }
 
 .button-ctn button {
@@ -88,6 +88,7 @@ header {
 #img-layout {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  width:var(--layout-width);
   gap: 10px;
   border-bottom:1px solid grey;
 }
@@ -102,4 +103,11 @@ header {
   background-color:var(--bg-color);
   display: flex;
   flex-direction: column;
+  
 }
+.img-txt-box {
+
+  display:flex;
+  justify-content: space-between;
+}
+
